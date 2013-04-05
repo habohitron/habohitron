@@ -28,25 +28,14 @@ class HitronCryptDB:
 			return clr[0]
 		else:
 			return None
-	def insert(self, pair):
+	def insert(self, enc, clr):
 		cur = self.con.cursor()
 		cur.execute("insert into pair values(?, ?)", 
 			[
-				sqlite3.Binary(pair[0]),
-				sqlite3.Binary(pair[1])
+				sqlite3.Binary(enc),
+				sqlite3.Binary(clr)
 			]
 		)
-		self.con.commit()
-		cur.close()
-	def insertAll(self, pairs):
-		cur = self.con.cursor()
-		for pair in pairs:
-			cur.execute("insert into pair values(?, ?)", 
-				[
-					sqlite3.Binary(pair[0]),
-					sqlite3.Binary(pair[1])
-				]
-			)
 		self.con.commit()
 		cur.close()
 
@@ -79,7 +68,7 @@ class HitronCrypt:
 				config[offset+self.chunklen:offset+self.chunklen*2] = encs[o]
 				o+=1
 		return config
-	def doGetPairs(self, encs):
+	def decrypt(self, encs):
 		config = self.prepareConfig(encs)
 		self.ctrl.login(self.user, self.password)
 		self.ctrl.uploadConfig(config)
@@ -88,11 +77,8 @@ class HitronCrypt:
 		# die session verloren geht, wenn eine config hochgeladen wird
 		self.ctrl.login(self.user, self.password)
 		clrs = self.ctrl.readIpFilterRules() + self.ctrl.readHostPortRules()
-		pairs = []
-		for i in range(0, len(encs)):
-			pairs.append((encs[i], clrs[i]))
 		self.ctrl.logout()
-		return pairs
+		return clrs[:len(encs)]
 
 def main(args):
 	'''
@@ -119,16 +105,16 @@ def main(args):
 					continue
 				encs.append(d)
 				if len(encs) == hc.fields:
-					pairs = hc.doGetPairs(encs)
-					for pair in pairs:
-						sys.stdout.write(pair[1])
-					hcdb.insertAll(pairs)
+					clrs = hc.decrypt(encs)
+					for i in range(0, len(clrs)):
+						hcdb.insert(encs[i], clrs[i])
+						sys.stdout.write(clrs[i])
 					encs = []
 			if len(encs) > 0:
-				pairs = hc.doGetPairs(encs)
-				for pair in pairs:
-					sys.stdout.write(pair[1])
-				hcdb.insertAll(pairs)
+				clrs = hc.decrypt(encs)
+				for i in range(0, len(clrs)):
+					hcdb.insert(encs[i], clrs[i])
+					sys.stdout.write(clrs[i])
 				encs = []
 	return 0
 
