@@ -1,0 +1,288 @@
+Main
+{
+        NetworkAccess 1;
+        ModemCapabilities
+        {
+         ConcatenationSupport 1;
+        }
+        GlobalPrivacyEnable 1;
+        GenericTLV TlvCode 31 TlvLength 1 TlvValue 0x01;
+        SnmpMibObject iso.3.6.1.2.1.69.1.2.1.7.1 Integer 4 ;
+        SnmpMibObject iso.3.6.1.2.1.69.1.2.1.2.1 IPAddress 10.10.2.0 ;
+        SnmpMibObject iso.3.6.1.2.1.69.1.2.1.3.1 IPAddress 255.255.255.0 ;
+        SnmpMibObject iso.3.6.1.2.1.69.1.2.1.4.1 String "privateAccess4us" ;
+        SnmpMibObject iso.3.6.1.2.1.69.1.2.1.5.1 Integer 3 ;
+        SnmpMibObject iso.3.6.1.2.1.69.1.2.1.6.1 String "@" ;
+        SnmpMibObject iso.3.6.1.2.1.69.1.2.1.7.2 Integer 4 ;
+        SnmpMibObject iso.3.6.1.2.1.69.1.2.1.2.2 IPAddress 10.16.152.1 ;
+        SnmpMibObject iso.3.6.1.2.1.69.1.2.1.3.2 IPAddress 255.255.255.255 ;
+        SnmpMibObject iso.3.6.1.2.1.69.1.2.1.4.2 String "privateAccess4us" ;
+        SnmpMibObject iso.3.6.1.2.1.69.1.2.1.5.2 Integer 3 ;
+        SnmpMibObject iso.3.6.1.2.1.69.1.2.1.6.2 String "@" ;
+        SnmpMibObject iso.3.6.1.2.1.69.1.2.1.7.3 Integer 4 ;
+        SnmpMibObject iso.3.6.1.2.1.69.1.2.1.2.3 IPAddress 10.16.8.0 ;
+        SnmpMibObject iso.3.6.1.2.1.69.1.2.1.3.3 IPAddress 255.255.255.0 ;
+        SnmpMibObject iso.3.6.1.2.1.69.1.2.1.4.3 String "privateAccess4us" ;
+        SnmpMibObject iso.3.6.1.2.1.69.1.2.1.5.3 Integer 3 ;
+        SnmpMibObject iso.3.6.1.2.1.69.1.2.1.6.3 String "@" ;
+        SnmpMibObject iso.3.6.1.2.1.69.1.2.1.7.4 Integer 4 ;
+        SnmpMibObject iso.3.6.1.2.1.69.1.2.1.2.4 IPAddress 10.16.136.0 ;
+        SnmpMibObject iso.3.6.1.2.1.69.1.2.1.3.4 IPAddress 255.255.255.0 ;
+        SnmpMibObject iso.3.6.1.2.1.69.1.2.1.4.4 String "privateAccess4us" ;
+        SnmpMibObject iso.3.6.1.2.1.69.1.2.1.5.4 Integer 3 ;
+        SnmpMibObject iso.3.6.1.2.1.69.1.2.1.6.4 String "@" ;
+        SnmpMibObject iso.3.6.1.2.1.69.1.2.1.7.5 Integer 4 ;
+        SnmpMibObject iso.3.6.1.2.1.69.1.2.1.2.5 IPAddress 10.0.0.0 ;
+        SnmpMibObject iso.3.6.1.2.1.69.1.2.1.3.5 IPAddress 255.0.0.0 ;
+        SnmpMibObject iso.3.6.1.2.1.69.1.2.1.4.5 String "publicAccess4us" ;
+        SnmpMibObject iso.3.6.1.2.1.69.1.2.1.5.5 Integer 2 ;
+        SnmpMibObject iso.3.6.1.2.1.69.1.2.1.6.5 String "@" ;
+        SnmpMibObject iso.3.6.1.2.1.69.1.6.3.0 Integer 2 ;
+        SnmpMibObject iso.3.6.1.2.1.69.1.6.4.1.2.1 Integer 4 ;
+        SnmpMibObject iso.3.6.1.2.1.69.1.6.4.1.3.1 Integer 1 ;
+        SnmpMibObject iso.3.6.1.2.1.69.1.6.4.1.4.1 Integer 0 ;
+        SnmpMibObject iso.3.6.1.2.1.69.1.6.4.1.5.1 Integer 3 ;
+        SnmpMibObject iso.3.6.1.2.1.69.1.6.4.1.6.1 Integer 2 ;
+        SnmpMibObject iso.3.6.1.2.1.69.1.6.4.1.7.1 IPAddress 0.0.0.0 ;
+        SnmpMibObject iso.3.6.1.2.1.69.1.6.4.1.8.1 IPAddress 0.0.0.0 ;
+        SnmpMibObject iso.3.6.1.2.1.69.1.6.4.1.9.1 IPAddress 0.0.0.0 ;
+        SnmpMibObject iso.3.6.1.2.1.69.1.6.4.1.10.1 IPAddress 0.0.0.0 ;
+        SnmpMibObject iso.3.6.1.2.1.69.1.6.4.1.11.1 Integer 6 ;
+        SnmpMibObject iso.3.6.1.2.1.69.1.6.4.1.14.1 Integer 137 ;
+        SnmpMibObject iso.3.6.1.2.1.69.1.6.4.1.15.1 Integer 139 ;
+        SnmpMibObject iso.3.6.1.2.1.69.1.6.4.1.2.2 Integer 4 ;
+        SnmpMibObject iso.3.6.1.2.1.69.1.6.4.1.3.2 Integer 1 ;
+        SnmpMibObject iso.3.6.1.2.1.69.1.6.4.1.4.2 Integer 0 ;
+        SnmpMibObject iso.3.6.1.2.1.69.1.6.4.1.5.2 Integer 3 ;
+        SnmpMibObject iso.3.6.1.2.1.69.1.6.4.1.6.2 Integer 2 ;
+        SnmpMibObject iso.3.6.1.2.1.69.1.6.4.1.7.2 IPAddress 0.0.0.0 ;
+        SnmpMibObject iso.3.6.1.2.1.69.1.6.4.1.8.2 IPAddress 0.0.0.0 ;
+        SnmpMibObject iso.3.6.1.2.1.69.1.6.4.1.9.2 IPAddress 0.0.0.0 ;
+        SnmpMibObject iso.3.6.1.2.1.69.1.6.4.1.10.2 IPAddress 0.0.0.0 ;
+        SnmpMibObject iso.3.6.1.2.1.69.1.6.4.1.11.2 Integer 17 ;
+        SnmpMibObject iso.3.6.1.2.1.69.1.6.4.1.14.2 Integer 137 ;
+        SnmpMibObject iso.3.6.1.2.1.69.1.6.4.1.15.2 Integer 139 ;
+        SnmpMibObject iso.3.6.1.2.1.69.1.6.4.1.2.3 Integer 4 ;
+        SnmpMibObject iso.3.6.1.2.1.69.1.6.4.1.3.3 Integer 1 ;
+        SnmpMibObject iso.3.6.1.2.1.69.1.6.4.1.4.3 Integer 0 ;
+        SnmpMibObject iso.3.6.1.2.1.69.1.6.4.1.5.3 Integer 3 ;
+        SnmpMibObject iso.3.6.1.2.1.69.1.6.4.1.6.3 Integer 2 ;
+        SnmpMibObject iso.3.6.1.2.1.69.1.6.4.1.7.3 IPAddress 0.0.0.0 ;
+        SnmpMibObject iso.3.6.1.2.1.69.1.6.4.1.8.3 IPAddress 0.0.0.0 ;
+        SnmpMibObject iso.3.6.1.2.1.69.1.6.4.1.9.3 IPAddress 0.0.0.0 ;
+        SnmpMibObject iso.3.6.1.2.1.69.1.6.4.1.10.3 IPAddress 0.0.0.0 ;
+        SnmpMibObject iso.3.6.1.2.1.69.1.6.4.1.11.3 Integer 6 ;
+        SnmpMibObject iso.3.6.1.2.1.69.1.6.4.1.14.3 Integer 135 ;
+        SnmpMibObject iso.3.6.1.2.1.69.1.6.4.1.15.3 Integer 135 ;
+        BaselinePrivacy
+        {
+         AuthTimeout 10;
+         ReAuthTimeout 10;
+         AuthGraceTime 600;
+         TEKGraceTime 600;
+         AuthRejectTimeout 60;
+        }
+        MaxCPE 2;
+        UsServiceFlow
+        {
+         UsServiceFlowRef 1;
+         QosParamSetType 7;
+         TrafficPriority 0;
+         MaxRateSustained 2100000;
+         SchedulingType 2;
+         IpTosOverwrite 0x0000;
+        }
+        DsServiceFlow
+        {
+         DsServiceFlowRef 2;
+         QosParamSetType 7;
+         MaxRateSustained 12000000;
+        }
+        UsPacketClass
+        {
+         ClassifierRef 201;
+         ServiceFlowRef 12;
+         ActivationState 1;
+         LLCPacketClassifier
+         {
+            EtherType 0x030f16;
+         }
+        }
+        UsPacketClass
+        {
+         ClassifierRef 202;
+         ServiceFlowRef 12;
+         ActivationState 1;
+         IpPacketClassifier
+         {
+            IpProto 17;
+            IpSrcAddr 10.0.0.0;
+            IpSrcMask 255.0.0.0;
+            SrcPortStart 2427;
+            SrcPortEnd 2428;
+         }
+        }
+        UsPacketClass
+        {
+         ClassifierRef 203;
+         ServiceFlowRef 12;
+         ActivationState 1;
+         IpPacketClassifier
+         {
+            IpProto 17;
+            IpSrcAddr 10.0.0.0;
+            IpSrcMask 255.0.0.0;
+            DstPortStart 53;
+            DstPortEnd 53;
+         }
+        }
+        UsPacketClass
+        {
+         ClassifierRef 204;
+         ServiceFlowRef 12;
+         ActivationState 1;
+         IpPacketClassifier
+         {
+            IpProto 17;
+            IpSrcAddr 10.0.0.0;
+            IpSrcMask 255.0.0.0;
+            SrcPortStart 161;
+            SrcPortEnd 161;
+         }
+        }
+        UsPacketClass
+        {
+         ClassifierRef 205;
+         ServiceFlowRef 12;
+         ActivationState 1;
+         IpPacketClassifier
+         {
+            IpProto 17;
+            IpDstAddr 83.169.182.0;
+            IpDstMask 255.255.255.128;
+            SrcPortStart 5060;
+            SrcPortEnd 5060;
+            DstPortStart 5060;
+            DstPortEnd 5060;
+         }
+        }
+        UsPacketClass
+        {
+         ClassifierRef 206;
+         ServiceFlowRef 12;
+         ActivationState 1;
+         IpPacketClassifier
+         {
+            IpTos 0x5050ff;
+            IpProto 17;
+            IpSrcAddr 10.0.0.0;
+            IpSrcMask 255.0.0.0;
+            IpDstAddr 10.0.0.0;
+            IpDstMask 255.0.0.0;
+         }
+        }
+        DsPacketClass
+        {
+         ClassifierRef 101;
+         ServiceFlowRef 4;
+         IpPacketClassifier
+         {
+            IpProto 17;
+            IpDstAddr 10.0.0.0;
+            IpDstMask 255.0.0.0;
+            DstPortStart 2427;
+            DstPortEnd 2428;
+         }
+         ActivationState 1;
+        }
+        DsPacketClass
+        {
+         ClassifierRef 102;
+         ServiceFlowRef 4;
+         ActivationState 1;
+         IpPacketClassifier
+         {
+            IpProto 17;
+            IpDstAddr 10.0.0.0;
+            IpDstMask 255.0.0.0;
+            SrcPortStart 53;
+            SrcPortEnd 53;
+         }
+        }
+        DsPacketClass
+        {
+         ClassifierRef 103;
+         ServiceFlowRef 4;
+         ActivationState 1;
+         IpPacketClassifier
+         {
+            IpProto 17;
+            IpDstAddr 10.0.0.0;
+            IpDstMask 255.0.0.0;
+            DstPortStart 161;
+            DstPortEnd 161;
+         }
+        }
+        DsPacketClass
+        {
+         ClassifierRef 104;
+         ServiceFlowRef 4;
+         ActivationState 1;
+         IpPacketClassifier
+         {
+            IpProto 17;
+            IpSrcAddr 83.169.182.0;
+            IpSrcMask 255.255.255.128;
+            SrcPortStart 5060;
+            SrcPortEnd 5060;
+            DstPortStart 5060;
+            DstPortEnd 5060;
+         }
+        }
+        UsServiceFlow
+        {
+         UsServiceFlowRef 12;
+         QosParamSetType 7;
+         TrafficPriority 4;
+         SchedulingType 2;
+         IpTosOverwrite 0x6868;
+        }
+        DsServiceFlow
+        {
+         DsServiceFlowRef 4;
+         QosParamSetType 7;
+         TrafficPriority 4;
+         GenericTLV TlvCode 32 TlvLength 4 TlvValue 0x80000000;
+        }
+        UsPacketClass
+        {
+         ClassifierRef 207;
+         ServiceFlowRef 12;
+         ActivationState 1;
+         LLCPacketClassifier
+         {
+            EtherType 0x03252b;
+         }
+        }
+        SwUpgradeFilename "CVE-30360-3.1.1.15-MGCP-KDG-120607-EURO.sbn";
+        SnmpMibObject iso.3.6.1.2.1.69.1.3.3.0 Integer 2 ;
+        MfgCVCData 0x308202f8308201e0a00302010202100ea7e9b0f58a8319716b91dfef47a286300d06092a864886f70d0101050500306f310b3009060355040613024245311f301d060355040a131674436f6d4c616273202d204575726f2d444f4353495331153013060355040b130c4361626c65204d6f64656d73312830260603550403131f4575726f2d444f43534953204361626c65204d6f64656d20526f6f74204341301e170d3034303831333030303030305a170d3134303831323233353935395a3069310b3009060355040613025457311c301a060355040a1313486974726f6e20546563686e6f6c6f6769657331143012060355040b130b4575726f2d444f;
+        MfgCVCData 0x43534953312630240603550403131d436f646520566572696669636174696f6e20436572746966696361746530819f300d06092a864886f70d010101050003818d0030818902818100e4659f658299af8cef98c1ba71945e60f865566cb900fef7731e4a9825454ce5b91550445f7bb0d746366b3e920b4aadd1251d76de30ad0822ae7b18d36cea773ce0a4df4a8d4d240260e5b19a58a3e8563bdc5a492f62ff0c53f585e9302ab404e81d62751cf57a12b780bda49b71845bdc47143b68f107815c447bf60198770203010001a31a301830160603551d250101ff040c300a06082b06010505070303300d06092a864886f70d01010505000382010100;
+        MfgCVCData 0x68a537a89027b9e3c54bd4cd1f66e966888572265b9f925798726be78f9a78a65ee1645a560ec8bcb71f32dbe05156921449259a04855c6bb9afc9ad8210da28671b0aa55671fbe70b7ef5807a5e9ad78c8872ac3377b52b5a4005d4d6ef13048651098fef748b5c072e686c90cc90fcdd3ff0f7f77273518b9af9751fb344484de68d5bb05b0fa88166b773abbc576da5616dd6a48d08d0dba1d9b00096cd760ea678dac903897ae816b8e44dd48b502e4ce7c0118a8070f2edcbda703d61e3fdbbca255bed13a5909ad96dd8ce602c22d4f0758d02c39765e6858eb6dd26b71dc771f99ccc1a15f3ec9f16184cfc804af1bd8d7ed2bfaabb5bde472baa;
+        MfgCVCData 0xed95;
+        SnmpMibObject iso.3.6.1.2.1.1.5.0 String "CVE-30360" ;
+        SnmpMibObject iso.3.6.1.4.1.8595.2.1.2.2.1.2.1 String " " ;
+        SnmpMibObject iso.3.6.1.4.1.8595.2.1.2.2.1.2.2 HexString 0xe0 ;
+        SnmpMibObject iso.3.6.1.4.1.8595.2.1.2.2.1.2.3 String " " ;
+        SnmpMibObject iso.3.6.1.4.1.8595.2.1.2.2.1.2.4 String " " ;
+        SnmpMibObject iso.3.6.1.4.1.8595.2.1.2.2.1.2.5 String " " ;
+        SnmpMibObject iso.3.6.1.4.1.8595.2.1.2.10.1.2.2 String "" ;
+        SnmpMibObject iso.3.6.1.4.1.8595.2.1.2.15.0 Integer 2 ;
+        GenericTLV TlvCode 202 TlvLength 3 TlvValue 0x010100;
+        SnmpMibObject iso.3.6.1.4.1.8595.80211.1.1.0 Integer 0 ;
+        SnmpMibObject iso.3.6.1.4.1.8595.80211.100.0 Integer 1 ;
+        /* CmMic ; */
+        /* CmtsMic ; */
+        /*EndOfDataMkr*/
+        /* Pad */
+}

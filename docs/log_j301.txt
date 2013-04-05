@@ -1,0 +1,2 @@
+Starting LZMA Uncompression Algorithm.
+Compressed file is LZMA format.

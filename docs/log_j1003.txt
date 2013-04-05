@@ -1,0 +1,172 @@
+=================================================================
+        Ralink 3352 iNIC on Jul 31 2012 <10:32:23>
+
+                Used Memory 998K
+                Free Memory Base = 0x800FEB30
+                Cached text size = 32832
+                HZ = 1000
+===================================================================
+
+Check Firmware CRC (0x48141363 ~ 0x48141363) -- match
+SYSCFG = 0x00101102
+SDRAM CFG0 = 0xd1825282
+SDRAM CFG1 = 0xe0010600
+CPU revision is: 0001964c
+MAX_MEMORY = 0x800000
+Instruction cache 32kB, physically tagged, 4-way, linesize 32 bytes.
+Data cache 16kB, 4-way, linesize 32 bytes.
+CONFIG0 = 80010483
+80010483 -- > CONFIG0
+-> CONFIG0 = 80010483
+DEBUG = 02018020, Kernel
+STATUS = 10000000, Kernel
+
+=== EEPROM ===
+0x0000 : 52 33 00 01 00 0c 43 33 52 58 52 33 8f 14 ff ff
+0x0010 : ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff
+0x0020 : ff ff ff ff ff ff ff ff 00 0c 43 33 52 77 00 0c
+0x0030 : 43 33 52 66 22 0c 24 00 ff ff 23 81 55 77 98 aa
+
+rt_buf_init: 9 gets, 3 releases.  5824592 in use, 1324152 free, largest = 132415
+2
+GPIOMODE(b0000060) = 0040009e
+OS_MAX_TASKS = 32
+system interface : 2
+
+
+=== pAd = 8016d8f8, size = 867616 ===
+
+<-- RTMPAllocAdapterBlock, Status=0
+wi-fi init
+ RGMII Mode
+SWITCH at DUMP MODE
+
+=== GMAC Rx_Ring = a00c7640, Tx_Ring0 = a00c7240 ===
+Load RT2880 Timer Module(Wdg/Soft)
+============> Parameter MAC=bc:14:01:49:a9:58
+============> MiiMasterMac=bc:14:01:49:a9:52
+RX DESC a00dd2c0  size = 1536
+<-- RTMPAllocTxRxRingMemory, Status=0
+CountryRegionABand=7
+Key1Str is Invalid key length(1) or Type(0)
+Key1Str is Invalid key length(1) or Type(0)
+Key1Str is Invalid key length(1) or Type(0)
+Key1Str is Invalid key length(1) or Type(0)
+Key1Str is Invalid key length(1) or Type(0)
+Key1Str is Invalid key length(1) or Type(0)
+Key1Str is Invalid key length(1) or Type(0)
+Key2Str is Invalid key length(1) or Type(0)
+Key2Str is Invalid key length(1) or Type(0)
+Key2Str is Invalid key length(1) or Type(0)
+Key2Str is Invalid key length(1) or Type(0)
+Key2Str is Invalid key length(1) or Type(0)
+Key2Str is Invalid key length(1) or Type(0)
+Key2Str is Invalid key length(1) or Type(0)
+Key3Str is Invalid key length(1) or Type(0)
+Key3Str is Invalid key length(1) or Type(0)
+Key3Str is Invalid key length(1) or Type(0)
+Key3Str is Invalid key length(1) or Type(0)
+Key3Str is Invalid key length(1) or Type(0)
+Key3Str is Invalid key length(1) or Type(0)
+Key3Str is Invalid key length(1) or Type(0)
+Key4Str is Invalid key length(1) or Type(0)
+Key4Str is Invalid key length(1) or Type(0)
+Key4Str is Invalid key length(1) or Type(0)
+Key4Str is Invalid key length(1) or Type(0)
+Key4Str is Invalid key length(1) or Type(0)
+Key4Str is Invalid key length(1) or Type(0)
+Key4Str is Invalid key length(1) or Type(0)
+1. Phy Mode = 9
+2. Phy Mode = 9
+3. Phy Mode = 9
+RTMPSetPhyMode: channel is out of range, use first channel=0
+RTMPSetIndividualHT : Use legacy rate in WEP/TKIP encryption mode (apidx=32)
+MCS Set = ff ff 00 00 01
+Main bssid = bc:14:01:49:a9:58
+<==== rt28xx_init, Status=0
+SYNC - BBP R4 to 20MHz.l
+SYNC - BBP R4 to 20MHz.l
+SYNC - BBP R4 to 20MHz.l
+SYNC - BBP R4 to 20MHz.l
+SYNC - BBP R4 to 20MHz.l
+SYNC - BBP R4 to 20MHz.l
+SYNC - BBP R4 to 20MHz.l
+SYNC - BBP R4 to 20MHz.l
+SYNC - BBP R4 to 20MHz.l
+SYNC - BBP R4 to 20MHz.l
+RTMPSetIndividualHT : Use legacy rate in WEP/TKIP encryption mode (apidx=32)
+calling bridge_module_init()
+Response MAC=bc:14:01:49:a9:58
+
+# Parameter1: No. Tasks
+# Parameter2: CPU Usage in %
+# Parameter3: No. Task switches/sec
+<-PRESS 'ESC' TO QUIT->
+
+(00:00:08) - 8614(0) 7 x 13277
+Response MAC=bc:14:01:49:a9:58
+Response MAC=bc:14:01:49:a9:58
+Response MAC=bc:14:01:49:a9:58
+Response MAC=bc:14:01:49:a9:58
+Response MAC=bc:14:01:49:a9:58
+Response MAC=bc:14:01:49:a9:58
+Response MAC=bc:14:01:49:a9:58
+Response MAC=bc:14:01:49:a9:58
+Response MAC=bc:14:01:49:a9:58
+Response MAC=bc:14:01:49:a9:58
+Response MAC=bc:14:01:49:a9:58
+Response MAC=bc:14:01:49:a9:58
+Response MAC=bc:14:01:49:a9:58
+Response MAC=bc:14:01:49:a9:58
+Response MAC=bc:14:01:49:a9:58
+Response MAC=bc:14:01:49:a9:58
+Response MAC=bc:14:01:49:a9:58
+Response MAC=bc:14:01:49:a9:58
+Response MAC=bc:14:01:49:a9:58
+Response MAC=bc:14:01:49:a9:58
+Response MAC=bc:14:01:49:a9:58
+Response MAC=bc:14:01:49:a9:58
+Response MAC=bc:14:01:49:a9:58
+AsicCheckForHwRecovery!!
+Reset BBP Agent busy bit!!
+Response MAC=bc:14:01:49:a9:58
+Response MAC=bc:14:01:49:a9:58
+Response MAC=bc:14:01:49:a9:58
+Response MAC=bc:14:01:49:a9:58
+Response MAC=bc:14:01:49:a9:58
+Response MAC=bc:14:01:49:a9:58
+Response MAC=bc:14:01:49:a9:58
+Response MAC=bc:14:01:49:a9:58
+Response MAC=bc:14:01:49:a9:58
+RTMPSetIndividualHT : Use legacy rate in WEP/TKIP encryption mode (apidx=32)
+RTMPSetIndividualHT : Use legacy rate in WEP/TKIP encryption mode (apidx=32)
+Response MAC=bc:14:01:49:a9:58
+Response MAC=bc:14:01:49:a9:58
+RTMPSetIndividualHT : Use legacy rate in WEP/TKIP encryption mode (apidx=32)
+Response MAC=bc:14:01:49:a9:58
+Response MAC=bc:14:01:49:a9:58
+Response MAC=bc:14:01:49:a9:58
+RTMPSetIndividualHT : Use legacy rate in WEP/TKIP encryption mode (apidx=32)
+Response MAC=bc:14:01:49:a9:58
+Response MAC=bc:14:01:49:a9:58
+
+(00:01:08) - 61345(0) 7 x 121648
+GE: Now Rx Time = 78246, Last Rx Time = 57775
+
+(00:02:08) - 61382(0) 7 x 122121
+
+(00:03:08) - 61357(0) 7 x 122093
+
+(00:04:08) - 61325(0) 7 x 122017
+
+(00:05:08) - 61324(0) 7 x 122014
+
+(00:06:08) - 61327(0) 7 x 122021
+
+(00:07:08) - 61365(0) 7 x 122096
+
+(00:08:08) - 61366(0) 7 x 122098
+
+(00:09:08) - 61376(0) 7 x 122119
+
+(00:10:08) - 61399(0) 7 x 122163
