@@ -14,11 +14,8 @@ import (
 
 var (
 	activeWls = []byte("var WlsStatus=\"1\";")
-	reWirelessPage = regexp.MustCompile("((admin/wireless.asp)|(admin/wireless_e.asp)|(admin/wireless_ac.asp)|(wireless_radar.asp)|(admin/wireless_signal.asp))$")
 	reTextHtml = regexp.MustCompile("text/html")
-	reFilter = regexp.MustCompile("alert\\(\"WIFI function is notAvailable yet!\"\\);")
 	reWlsStatus = regexp.MustCompile("var WlsStatus=\"\";")
-	reLocation = regexp.MustCompile("location.href = 'cable-Systeminfo.asp';")
 )
 
 type Buffer struct {
@@ -55,10 +52,6 @@ func main() {
 		}
 		
 		b := reWlsStatus.ReplaceAll(buf.B.Bytes(), activeWls)
-		if reWirelessPage.FindString(r.Request.URL.String()) != "" {
-			b = reLocation.ReplaceAll(b, []byte{})
-			b = reFilter.ReplaceAll(b, []byte{})
-		}		
 		buf.B.Reset()
 		buf.B.Write(b)
 		
