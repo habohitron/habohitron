@@ -1,0 +1,3 @@
+Kleines Programm welches einen Proxy auf Port 8080 und einen Webserver auf Port 8081 öffnet, dieser leitet Anfragen über den Proxy an IP 192.168.0.1.
+Somit kann der Router ohne eine Änderung des Browser-Proxys frei konfiguriert werden.
+Alternativ kann immernoch der Proxy auf Port 8080 mittels Browser genutzt werden.
