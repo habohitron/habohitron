@@ -1,0 +1,6 @@
+/usr/sbin/webs
+	- ist ein auf goahead basierender webserver der die
+		benutzeroberfläche enthält
+		
+/lib/libhtx_libs.so
+	- enthält routinen zum ver- und ent-schlüsseln der config file
