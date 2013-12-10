@@ -4,3 +4,8 @@
 		
 /lib/libhtx_libs.so
 	- enthält routinen zum ver- und ent-schlüsseln der config file
+	
+/lib/libhtx_db.so
+	0004606C - root/D0ntc2ackme
+	00046080 - app/com8&#wDs2*1er
+	00059B14 - 0x57, 0x8A, 0x95, 0x8E, 0x3D, 0xD9, 0x33, 0xFC (DES-Schlüssel)
