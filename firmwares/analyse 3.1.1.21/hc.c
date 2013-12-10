@@ -6,7 +6,8 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <openssl/des.h>
-	
+
+#define BUFFER_SIZE (8 * 1024)
 #define RET_GOTO(code, marker) \
 	ret = code; \
 	goto marker;
@@ -18,12 +19,15 @@ static DES_cblock hitron_key = {
 
 void hitron_crypt(FILE *out, FILE *in, int enc)
 {
-	DES_cblock block;
+	size_t i, n = -1;
+	DES_cblock buffer[BUFFER_SIZE];
 	DES_key_schedule schedule;
 	DES_set_key_unchecked(&hitron_key, &schedule);
-	while(fread((void *)&block, sizeof(block), 1, in) > 0) {
-		DES_ecb_encrypt(&block, &block, &schedule, enc);
-		fwrite((void *)&block, sizeof(block), 1, out);
+	while((n = fread((void *)&buffer, sizeof(DES_cblock), BUFFER_SIZE, in)) > 0) {
+		for(i = 0; i < n; i++) {
+			DES_ecb_encrypt(&buffer[i], &buffer[i], &schedule, enc);
+		}
+		fwrite((void *)&buffer, sizeof(DES_cblock), n, out);
 	}
 }
 
@@ -54,5 +58,5 @@ int main(int argc, char **argv)
 close_in:
 	fclose(in);
 end:
-	return EXIT_SUCCESS;
+	return ret;
 }
