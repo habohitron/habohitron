@@ -1,0 +1,5 @@
+In debug seite genutzte befehle
+
+/usr/bin/traceroute  -I %s  2>&1 |awk 'BEGIN{ORS=",0x22,"|",0x22,"}; {print ",0x24,"0}'|cat > %s && echo -n 'end|' >> %s &",0
+
+/bin/ping -c 4  %s  2>&1|awk 'BEGIN{ORS=",0x22,"|",0x22,"}; {print ",0x24,"0}'|cat > %s && echo -n 'end|' >> %s &",0
